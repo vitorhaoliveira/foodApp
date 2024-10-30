@@ -1,9 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import classes from "../styles/Header/Header.module.css";
 import HeaderBg from "./HeaderBg";
 
 import logoImg from "@/assets/logo.png";
+import classes from "@/components/styles/Header/Header.module.css"
+import NavLink from "./NavLink/NavLink";
 
 function Header() {
   return (
@@ -18,10 +19,10 @@ function Header() {
         <nav className={classes.nav}>
           <ul>
             <li>
-              <Link href="/meals">Navegar pelas refeições</Link>
+              <NavLink href="/meals">Navegue pelas refeições</NavLink>
             </li>
             <li>
-              <Link href="/community">Comunidade gastronômica</Link>
+              <NavLink href="/community">Comunidade gastronômica</NavLink>
             </li>
           </ul>
         </nav>
